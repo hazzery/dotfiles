@@ -1,0 +1,4 @@
+#!/bin/sh
+apt update
+sudo snap install nvim
+sudo apt install ripgrep fd git-delta bat -y
