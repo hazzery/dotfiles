@@ -111,3 +111,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias bat=batcat
+alias clera=clear
+alias clare=clear
+alias srcstatus="for dir in *; do echo ${dir}; cd ${dir}; git status -s; cd ..; done"
+alias zshc="nvim ~/.zshrc"
