@@ -117,3 +117,4 @@ alias bat=batcat
 alias clera=clear
 alias clare=clear
 alias zshc="nvim ~/.zshrc"
+alias kitty-update="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
