@@ -2,7 +2,16 @@
 sudo apt update && sudo apt upgrade -y
 sudo snap install nvim --classic
 sudo snap install brave
-sudo apt install zsh gcc python3-venv npm ripgrep fd-find fzf wl-clipboard git-delta bat -y
+sudo apt install zsh gcc python3-venv gopls npm ripgrep fd-find fzf wl-clipboard git-delta bat -y
+
+## Rust (rustup, cargo, rustfmt, rust-src, rust-analyzer)
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup component add rust-src
+rustup component add rust-analyzer
+
+## Go
+wget -q https://golang.org/dl/go1.19.1.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.19.1.linux-amd64.tar.gz
 
 ## Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
