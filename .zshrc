@@ -1,6 +1,8 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+HISTSIZE=1000000
+
 # List of themes here: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -8,15 +10,23 @@ ZSH_THEME="robbyrussell"
 # This makes repository status check for large repositories much, much faster.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
+
 source $ZSH/oh-my-zsh.sh
+
 
 # Make node work
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-export PATH="${PATH}:/home/harry/.cargo/bin"
+export PATH="${PATH}:${HOME}/bin"
 export PATH="${PATH}:/usr/local/go/bin"
+
+export WASMTIME_HOME="${HOME}/.wasmtime"
+
+export PATH="${PATH}:${WASMTIME_HOME}/bin"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
