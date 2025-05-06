@@ -11,6 +11,7 @@ return {
         ltex = {
           settings = {
             ltex = {
+              enabled = { "latex", "tex", "bib" },
               language = "en-NZ",
               dictionary = {
                 ["en-NZ"] = words,
