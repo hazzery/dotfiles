@@ -43,8 +43,6 @@ fi
 [[ ! -r '/home/harry/.opam/opam-init/init.zsh' ]] || source '/home/harry/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
 
-. "$HOME/.local/bin/env"
-
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias bat=batcat
