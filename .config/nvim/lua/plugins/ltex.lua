@@ -12,9 +12,9 @@ return {
           settings = {
             ltex = {
               enabled = { "latex", "tex", "bib" },
-              language = "en-NZ",
+              language = "en-nz",
               dictionary = {
-                ["en-NZ"] = words,
+                ["en-nz"] = words,
               },
             },
           },
