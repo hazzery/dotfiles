@@ -31,9 +31,13 @@ else
   export EDITOR='nvim'
 fi
 
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+zshc() {
+  nvim ~/.zshrc # Open zsh config in Neovim
+  source ~/.zshrc # source new changes once Neovim closes
+}
+
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias clera=clear
 alias clare=clear
-alias zshc="nvim ~/.zshrc"
 alias kitty-update="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
+alias uvc='eval "$(uv generate-shell-completion zsh)"'
