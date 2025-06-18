@@ -39,5 +39,8 @@ zshc() {
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias clera=clear
 alias clare=clear
-alias kitty-update="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
+alias zshc="nvim ~/.zshrc"
 alias uvc='eval "$(uv generate-shell-completion zsh)"'
+alias kitty-update="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
+
+. "$HOME/.local/bin/env"
