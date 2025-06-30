@@ -22,4 +22,8 @@ return {
       },
     },
   },
+  {
+    "icewind/ltex-client.nvim",
+    opts = {},
+  },
 }
